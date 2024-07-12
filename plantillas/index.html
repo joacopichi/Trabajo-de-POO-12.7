@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda de Ropa</title>
+</head>
+<body>
+    <h1>Bienvenido a la Tienda de Ropa</h1>
+    <ul>
+        {% for prenda in ropa %}
+            <li>{{ prenda.nombre }} - ${{ prenda.precio }} - Talla: {{ prenda.talla }} - Stock: {{ prenda.stock }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
